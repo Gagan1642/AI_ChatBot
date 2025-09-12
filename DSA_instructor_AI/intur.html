@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intur - DSA Instructor AI</title>
+    <link rel="stylesheet" href="intur.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h1>Intur</h1>
+                <p>DSA Instructor AI</p>
+            </div>
+            <div class="sidebar-menu">
+                <div class="menu-item active">
+                    <i>💬</i>
+                    <span>Chat</span>
+                </div>
+                <div class="menu-item">
+                    <i>📚</i>
+                    <span>Topics</span>
+                </div>
+                <div class="menu-item">
+                    <i>🧠</i>
+                    <span>Practice</span>
+                </div>
+                <div class="menu-item">
+                    <i>📊</i>
+                    <span>Progress</span>
+                </div>
+                <div class="menu-item">
+                    <i>⚙️</i>
+                    <span>Settings</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-area">
+            <div class="chat-header">
+                <h2>DSA Learning Assistant</h2>
+                <div class="status">
+                    <span>🟢</span>
+                    <span>Online</span>
+                </div>
+            </div>
+
+            <div class="chat-messages" id="chatMessages">
+                <div class="welcome-message">
+                    <h3>Welcome to Intur!</h3>
+                    <p>I'm your DSA instructor AI. Ask me anything about Data Structures and Algorithms!</p>
+                </div>
+            </div>
+
+            <div class="typing-indicator" id="typingIndicator">
+                <span>Intur is typing</span>
+                <div class="typing-dots">
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                </div>
+            </div>
+
+            <div class="chat-input-container">
+                <div class="chat-input-wrapper">
+                    <textarea 
+                        class="chat-input" 
+                        id="messageInput" 
+                        placeholder="Ask me about arrays, linked lists, trees, algorithms..."
+                        rows="1"
+                    ></textarea>
+                    <button class="send-button" id="sendButton">
+                        ➤
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="api-key-popup" id="apiKeyPopup">
+        <div class="api-key-modal">
+            <h3>Enter Your Gemini API Key</h3>
+            <p style="margin-bottom: 20px; color: #6B7280; font-size: 0.9rem;">
+                Get your API key from Google AI Studio and paste it below:
+            </p>
+            <input 
+                type="password" 
+                class="api-key-input" 
+                id="apiKeyInput" 
+                placeholder="Enter your Gemini API key..."
+            >
+            <button class="api-key-button" id="saveApiKey">Save API Key</button>
+        </div>
+    </div>
+
+    <script src="intur.js"></script>
+</body>
+</html>

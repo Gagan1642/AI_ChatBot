@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yarrar - Your AI Best Friend</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg-animation">
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo">Yarrar 🤖</div>
+            <div class="status-indicator">
+                <div class="status-dot"></div>
+                <span>Online & Ready to Chat</span>
+            </div>
+        </div>
+
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="chat-title">Your AI Best Friend 💬</div>
+                <div class="chat-subtitle">Casual, fun, and brutally honest - just like a real bestie!</div>
+            </div>
+
+            <div class="messages-container" id="messagesContainer">
+                <div class="welcome-message">
+                    <div class="welcome-title">Hey there! 👋</div>
+                    <div class="welcome-subtitle">I'm Yarrar, your new AI bestie. Let's chat about anything fun! 🎉</div>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="input-wrapper">
+                    <textarea 
+                        class="input-field" 
+                        id="messageInput" 
+                        placeholder="Type your message here... 💭"
+                        rows="1"
+                    ></textarea>
+                    <button class="send-button" id="sendButton">Send 🚀</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- API Key Modal -->
+    <div class="modal" id="apiKeyModal">
+        <div class="modal-content">
+            <div class="modal-title">🔑 Setup Required</div>
+            <div class="modal-description">
+                To start chatting with Yarrar, please enter your Gemini API key. Don't worry, it's stored locally and never shared! 🔒
+            </div>
+            <input 
+                type="password" 
+                class="api-key-input" 
+                id="apiKeyInput" 
+                placeholder="Enter your Gemini API key here..."
+            >
+            <div class="modal-buttons">
+                <button class="modal-button primary" id="saveApiKey">Save & Start Chatting 🎉</button>
+                <button class="modal-button secondary" id="demoMode">Try Demo Mode 🎭</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
